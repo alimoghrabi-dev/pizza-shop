@@ -4,8 +4,8 @@ import ClientMenuItem from "./ClientMenuItem";
 
 interface MenuItemProps {
   menuItems: IProduct[];
-  userCart: any;
-  session: Session | null;
+  userCart?: any;
+  session?: Session | null;
 }
 
 const MenuItem = async ({ menuItems, userCart, session }: MenuItemProps) => {

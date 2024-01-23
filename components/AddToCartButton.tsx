@@ -1,6 +1,5 @@
 "use client";
 
-import { IProduct } from "@/models/product.model";
 import { Button } from "./ui/button";
 import { formatPrice } from "@/lib/utils";
 import { useState } from "react";
@@ -16,7 +15,7 @@ const AddToCartButton = ({
 }: {
   id: string;
   price: number;
-  session: Session | null;
+  session: Session | null | undefined;
 }) => {
   const router = useRouter();
 

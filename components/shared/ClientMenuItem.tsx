@@ -12,7 +12,7 @@ interface ClientMenuItemProps {
   id: string;
   userCart: any;
   menuItemCategory: Schema.Types.ObjectId;
-  session: Session | null;
+  session: Session | null | undefined;
   price: number;
 }
 

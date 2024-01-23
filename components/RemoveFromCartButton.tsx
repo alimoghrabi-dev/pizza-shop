@@ -1,6 +1,5 @@
 "use client";
 
-import { IProduct } from "@/models/product.model";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "./ui/button";
@@ -16,7 +15,7 @@ const RemoveFromCartButton = ({
 }: {
   id: string;
   isCart?: boolean;
-  session: Session | null;
+  session: Session | null | undefined;
 }) => {
   const router = useRouter();
 
